@@ -31,8 +31,9 @@ We currently have plans that package software which the author/manufacturer has 
 When we become aware that a piece of software we package in core plans has been EOL'd or the author/manufacturer otherwise stops supporting it, we will:
 * Open an RFC explaining why the plan must be deprecated
 * When that RFC is approved (though the normal RFC approval process), we must
-1) Add a heading to the README of the core plan in the [core plan github repo](https://github.com/habitat-sh/core-plans)
-2) Add some sort of indication to the core plan's view page in public Builder (this will likely require some feature work)
+1) Delist the package in builder by setting it to "private" (that will make it invisible to anyone outside of the core org, as mentioned [in this issue](https://github.com/habitat-sh/builder/issues/18)
+2) Add a heading to the README of the core plan in the [core plan github repo](https://github.com/habitat-sh/core-plans)
+3) Add some sort of indication to the core plan's view page in Builder (remember, even if it is set to private and not viewable publicly, it will still be viewable to members of the core origin) (this will likely require some feature work)
 
 # Reference-level explanation
 [reference-level-explanation]: #reference-level-explanation
@@ -51,7 +52,7 @@ It will also necessitate some feature work on the part of Builder - we would nee
 
 Here are few alternatives:
 
-* Removing unsupported software completely from Builder - this would break anyone who depends on the software and cannot upgrade at this time. If there is at least one successful build of the software, we should preserve it on Builder for those who must use it, while indicating that it is deprecated and users should upgrade as soon as they can.
+* Removing unsupported software completely from Builder - this would break anyone who depends on the software and cannot upgrade at this time. If there is at least one successful build of the software, we should preserve it on Builder for those who must use it, while indicating that it is deprecated and users should upgrade as soon as they can. Setting the plan as "private" makes the plan unsearchable, but still downloadable by those who are already using it.
 * Keep a cache of downloaded software packages - this would seem to get us around download links being removed (which is what happened with jre9/jdk9), but would necessitate a lot more storage and feature work on the part of Builder. Even if we did this, it would not get us around the fact that the software is no longer supported by the author/manufacturer.
 
 # Unresolved questions
