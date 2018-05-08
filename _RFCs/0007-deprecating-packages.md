@@ -1,4 +1,4 @@
-- Change Name: deprecate_unsupported_software_plans
+j- Change Name: deprecate_unsupported_software_plans
 - Start Date: 2018-05-07
 - RFC PR: (leave this empty)
 - Core-Plans Issue: (leave this empty)
@@ -32,7 +32,7 @@ When we become aware that a piece of software we package in core plans has been 
 * Open an RFC explaining why the plan must be deprecated
 * When that RFC is approved (though the normal RFC approval process), we must
 1) Delist the package in builder by setting it to "private" (that will make it invisible to anyone outside of the core org, as mentioned [in this issue](https://github.com/habitat-sh/builder/issues/18)
-2) Add a heading to the README of the core plan in the [core plan github repo](https://github.com/habitat-sh/core-plans)
+2) Remove the core plan from the [core plans repo](https://github.com/habitat-sh/core-plans)
 3) Add some sort of indication to the core plan's view page in Builder (remember, even if it is set to private and not viewable publicly, it will still be viewable to members of the core origin) (this will likely require some feature work)
 
 # Reference-level explanation
@@ -57,7 +57,3 @@ Here are few alternatives:
 
 # Unresolved questions
 [unresolved]: #unresolved-questions
-
-- What parts of the design do you expect to resolve through the RFC process before this gets merged?
-- What parts of the design do you expect to resolve through the implementation of this feature before stabilization?
-- What related issues do you consider out of scope for this RFC that could be addressed in the future independently of the solution that comes out of this RFC?
