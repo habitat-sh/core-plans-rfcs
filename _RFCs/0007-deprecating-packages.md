@@ -35,6 +35,7 @@ When we become aware that a piece of software we package in core plans has been 
 2) Add a "Deprecated" notice to the core plan's README in the [core plans repo](https://github.com/habitat-sh/core-plans)
 3) Add some sort of indication to the core plan's view page in Builder (remember, even if it is set to private and not viewable publicly, it will still be viewable to members of the core origin) (this will likely require some feature work)
 4) Remove the plan from the [.bldr.toml](https://github.com/habitat-sh/core-plans/blob/master/.bldr.toml) file in the core plans repo.
+5) Disconnect the plan from Builder
 
 We must follow this same process in the case of a plan that
 * is incorrectly scoped into core plans - i.e. a test package
