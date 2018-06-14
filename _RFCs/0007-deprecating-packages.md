@@ -29,13 +29,16 @@ We currently have plans that package software which the author/manufacturer has 
 * [core/jdk9](https://github.com/habitat-sh/core-plans/blob/master/jdk9/plan.sh)(see explanation for core/jre9)
 
 When we become aware that a piece of software we package in core plans has been EOL'd or the author/manufacturer otherwise stops supporting it, we will:
-* Open an RFC explaining why the plan must be deprecated
-* When that RFC is approved (though the normal RFC approval process), we must
-1) Delist the package in builder by setting it to "private" (that will make it invisible to anyone outside of the core org, as mentioned [in this issue](https://github.com/habitat-sh/builder/issues/18)
-2) Add a "Deprecated" notice to the core plan's README in the [core plans repo](https://github.com/habitat-sh/core-plans)
-3) Add some sort of indication to the core plan's view page in Builder (remember, even if it is set to private and not viewable publicly, it will still be viewable to members of the core origin) (this will likely require some feature work)
-4) Remove the plan from the [.bldr.toml](https://github.com/habitat-sh/core-plans/blob/master/.bldr.toml) file in the core plans repo.
-5) Disconnect the plan from Builder
+
+1. Delist the package in builder by setting it to "private" (that will make it invisible to anyone outside of the core org, as mentioned [in this issue](https://github.com/habitat-sh/builder/issues/18)
+
+2. Add a "Deprecated" notice to the core plan's README in the [core plans repo](https://github.com/habitat-sh/core-plans)
+
+3. Add some sort of indication to the core plan's view page in Builder (remember, even if it is set to private and not viewable publicly, it will still be viewable to members of the core origin) (this will likely require some feature work)
+
+4. Remove the plan from the [.bldr.toml](https://github.com/habitat-sh/core-plans/blob/master/.bldr.toml) file in the core plans repo.
+
+5. Disconnect the plan from Builder
 
 We must follow this same process in the case of a plan that
 * is incorrectly scoped into core plans - i.e. a test package
