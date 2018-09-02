@@ -11,14 +11,14 @@ When packaging software with Habitat, we need to ensure we have an agreed level 
 # Motivation
 [motivation]: #motivation
 
-As the [core-plans][core-plans] repository continues to evolve and grow, more users are coming with new and useful use cases for the software that is packaged with Habitat. In order to ensure we maintain the core plans as simple, functional, testable and model examples of software pacakging, we must ensure complexity is kept to a minimum. This will encourage simpler configuration in [core-plans][core-plans] plans, and encourage users to use the configuration plan pattern to extend configuration where necessary.
+As the [core-plans][core-plans] repository continues to evolve and grow, more users are coming with new and useful use cases for the software that is packaged with Habitat. In order to ensure we maintain the core plans as simple, functional, testable and model examples of software packaging, we must ensure complexity is kept to a minimum. This will encourage simpler configuration in [core-plans][core-plans] plans, and encourage users to use the configuration plan pattern to extend configuration where necessary.
 
 # Guide-level explanation
 [guide-level-explanation]: #guide-level-explanation
 
 A habitat [core-plan] is a plan that is supported and published by core-contributors of the Habitat community. These are often relied upon by other plans, and as part of the Habitat build process itself.
 
-A core-plan's primary responsibility is to ensure the binaries and associated files responsible for running the commands or services are correctly built, packaged and released. In addition, for service pacakges, a minimal configuration representing the minimal/default service configuration is shipped to ensure that services can start in a simple state. This simple/minimal state is representative of the default configuration and minimal configuration required to get the service running.
+A core-plan's primary responsibility is to ensure the binaries and associated files responsible for running the commands or services are correctly built, packaged and released. In addition, for service packages, a minimal configuration representing the minimal/default service configuration is shipped to ensure that services can start in a simple state. This simple/minimal state is representative of the default configuration and minimal configuration required to get the service running.
 
 While more complicated and extensive configuration may be possible, a concious effort must be maintained in core-plans, to ensure that the configuration is kept simple and minimal. The implementing user has the opportunity to use "configuration plans" to extend the service and offer more customised configuration as necessary for their service.
 
