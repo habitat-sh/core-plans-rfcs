@@ -102,7 +102,7 @@ security:
 
 In this case, more options and configurability are provided to the `systemLog` section of the configuration, and can be modified at the users discretion.
 
-Some good ways to consider how apprpriate a configuration is for contribution to core-plans, contributors can reference a couple of sources:
+Some good ways to consider how appropriate a configuration is for contribution to core-plans, contributors can reference a couple of sources:
 
 * What do other distributions ship as a default configuration for this package? Check Ubuntu, Debian, CentOS, Arch, and any other Linux distributions for examples.
 * What is the minimal configuration required to get the service running?
