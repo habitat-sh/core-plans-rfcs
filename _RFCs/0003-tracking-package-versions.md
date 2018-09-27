@@ -51,4 +51,4 @@ The other alternative is to avoid sourcing another plan by tracking the latest s
 # Unresolved questions
 [unresolved]: #unresolved-questions
 
-- is there any way to automate this check for whether an update goes beyond the latest stable version of the software being packaged?
+- Is there any way to automate this check for whether an update goes beyond the latest stable version of the software being packaged?
