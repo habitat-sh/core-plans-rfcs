@@ -8,7 +8,7 @@
 
 Generic package names (ones which do not specify a version in the name - i.e. core/docker) must always point to the latest **stable** version of the software.
 
-Everytime a new major version of software packaged by Habitat is released as stable, a new core plan must be made for that version (i.e. when Docker11 is released as stable, we should create core/docker11). Any core plan which tracks a major stable version release (i.e. core/docker10, core/docker11) should source the generic plan and overwrite download urls, build phases, etc., as necessary to download and package that major version.
+Every time a new major version of software packaged by Habitat is released as stable, a new core plan must be made for that version (i.e. when Docker11 is released as stable, we should create core/docker11). Any core plan which tracks a major stable version release (i.e. core/docker10, core/docker11) should source the generic plan and overwrite download urls, build phases, etc., as necessary to download and package that major version.
 
 Edge versions of software are not tracked by core plans. If a user wishes to use the edge version of a package, they must either fork an existing core plan or create a new core plan to package it. Core plans only support stable versions of software.
 
