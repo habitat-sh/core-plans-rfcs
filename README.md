@@ -1,25 +1,11 @@
 # Chef OSS Practices
 
-Chef Software and the Habitat project are migrating from RFCs to [design proposals](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/design-proposals.md). 
-We have opened a number of [issues](https://github.com/habitat-sh/core-plans-rfcs/issues) to track the migration of each RFC to the new format. While this work is in flight, please 
-continue to consider the documents in this repository to be valid. 
+Chef Software and the Habitat Core Plans project have migrated from RFCs to [design proposals](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/design-proposals.md). 
 
-As we migrate each document, the format will change but we will endeavor to keep the intent of the document in place. If an issue for a particular RFC has been marked complete and 
-close, please consider that RFC to be superseded by the corresponding design proposal. 
-
-Once the migration is complete, we will be setting this repository to read-only for a period of one month. After the month has passed, we will be archiving this repository. 
-
-If you would like to open a new RFC, please follow the [design proposal](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/design-proposals.md) process and 
-open an issue on the [core-plans](https://github.com/habitat-sh/core-plans) repository instead. 
+If you would like to open a new proposal, please follow the [design proposal](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/design-proposals.md) process and 
+open an issue on the [core-plans](https://github.com/habitat-sh/core-plans) repository. 
 
 Thank you for your contributions, and thank you for using Habitat! 
-
-
-# RFCs for Habitat core plans
-
-[Habitat Plans](https://www.habitat.sh/docs/concepts-plans/) are packages in the Habitat Core Origin. They are maintained and built by the core maintainers to provide the fundamental base tier of packages used by the [Habitat](https://www.habitat.sh/) ecosystem.
-
-This repository contains RFCs for the core-plans community.
 
 ## License
 
